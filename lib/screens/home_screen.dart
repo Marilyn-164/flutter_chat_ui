@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_chat_ui/widgets/category_selector.dart';
-import 'package:flutter_chat_ui/widgets/favorite_contacts.dart';
 import 'package:flutter_chat_ui/widgets/recent_chats.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -21,7 +20,7 @@ class _HomeScreenState extends State<HomeScreen> {
           onPressed: () {},
         ),
         title: Text(
-          'Chats',
+          'CEP',
           style: TextStyle(
             fontSize: 28.0,
             fontWeight: FontWeight.bold,
@@ -51,7 +50,6 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
               child: Column(
                 children: <Widget>[
-                  FavoriteContacts(),
                   RecentChats(),
                 ],
               ),
